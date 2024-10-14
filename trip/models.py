@@ -33,4 +33,4 @@ class Note(models.Model):
   rating = models.PositiveSmallIntegerField(default=1, validators=[MaxValueValidator(5)])
 
   def __str__(self):
-    return f"{self.name} in {self.city}"
+    return f"{self.name} in {self.name}"
