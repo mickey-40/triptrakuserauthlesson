@@ -7,7 +7,7 @@ from .models import Trip, Note
 class HomeView(TemplateView):
   template_name = 'trip/index.html'
 
-def trips_list(request):
+def trip_list(request):
   trips = Trip.objects.all()
   context = { 
     'trips': trips
